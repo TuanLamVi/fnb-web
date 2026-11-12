@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F&B SMART V5.1 — Giải pháp quản lý kinh doanh F&B thông minh</title>
+  <meta name="description" content="Quản lý cửa hàng dễ dàng hơn. Kiểm soát hoạt động kinh doanh tốt hơn. Kết nối chủ quán và nhân viên trên một hệ thống F&B SMART V5.1.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="F&B SMART V5.1 — Giải pháp quản lý kinh doanh F&B thông minh">
+  <meta property="og:description" content="Hệ thống POS, KDS, quản lý nhân sự, tài chính và kho hàng toàn diện dành cho quán cafe, nhà hàng và quán ăn.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fbsmart-placeholder.local/">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Header / Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo & Brand -->
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="F&B SMART Logo" class="w-10 h-10 rounded-xl object-cover shadow-md shadow-sky-600/20">
+        <div>
+          <span class="text-xl font-bold tracking-tight text-slate-900">F&B SMART</span>
+          <span class="block text-[10px] uppercase tracking-widest text-sky-600 font-semibold">V5.1 Enterprise</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#features" class="hover:text-sky-600 transition">Tính năng</a>
+        <a href="#feature-articles" class="hover:text-sky-600 transition">Tính năng nổi bật</a>
+        <a href="#download" class="hover:text-sky-600 transition">Tải ứng dụng</a>
+        <a href="#roi" class="hover:text-sky-600 transition">Công cụ ROI</a>
+        <a href="#comparison" class="hover:text-sky-600 transition">So sánh</a>
+        <a href="#pricing" class="hover:text-sky-600 transition">Giải pháp & Báo giá</a>
+        <a href="#guides" class="hover:text-sky-600 transition">Hướng dẫn</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#demo" class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-5 py-2.5 rounded-xl transition shadow-lg shadow-sky-600/20 text-sm">
+          Đăng ký Demo
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+      <a href="#features" class="block text-slate-600 hover:text-sky-600 font-medium">Tính năng</a>
+      <a href="#feature-articles" class="block text-slate-600 hover:text-sky-600 font-medium">Tính năng nổi bật</a>
+      <a href="#download" class="block text-slate-600 hover:text-sky-600 font-medium">Tải ứng dụng</a>
+      <a href="#roi" class="block text-slate-600 hover:text-sky-600 font-medium">Công cụ ROI</a>
+      <a href="#comparison" class="block text-slate-600 hover:text-sky-600 font-medium">So sánh</a>
+      <a href="#pricing" class="block text-slate-600 hover:text-sky-600 font-medium">Giải pháp & Báo giá</a>
+      <a href="#guides" class="block text-slate-600 hover:text-sky-600 font-medium">Hướng dẫn</a>
+      <a href="#demo" class="block w-full text-center bg-sky-600 text-white font-semibold py-2.5 rounded-xl">Đăng ký Demo</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden bg-gradient-to-b from-sky-50/50 via-white to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 bg-sky-50 border border-sky-200/80 px-4 py-1.5 rounded-full text-sky-700 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-sky-600 animate-pulse"></span>
+            Phiên bản chính thức V5.1 (Tên miền chính thức chờ PO công bố)
+          </div>
+
+          <h1 class="hero-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            F&B SMART <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-sky-600 to-indigo-600 bg-clip-text text-transparent">Giải pháp quản lý kinh doanh F&B thông minh.</span>
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto lg:mx-0">
+            Quản lý cửa hàng dễ dàng hơn. Kiểm soát hoạt động kinh doanh tốt hơn. Kết nối chủ quán và nhân viên trên một hệ thống hợp nhất.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="https://play.google.com/store/apps/details?id=com.tuan.fnbsmart" target="_blank" class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-xl shadow-sky-600/25 flex items-center gap-2.5">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              Tải ứng dụng Android
+            </a>
+            <a href="#demo" class="bg-white hover:bg-slate-50 text-slate-700 font-semibold px-6 py-3.5 rounded-xl border border-slate-300 transition shadow-sm">
+              Đăng ký dùng thử Demo
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-8 border-t border-slate-200 grid grid-cols-3 gap-6 text-center lg:text-left">
+            <div>
+              <p class="text-2xl font-bold text-slate-900">Thời gian thực</p>
+              <p class="text-xs text-slate-500 font-medium">Đồng bộ dữ liệu</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-slate-900">POS & KDS</p>
+              <p class="text-xs text-slate-500 font-medium">Kết nối liền mạch nhà bếp</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold text-slate-900">Đa nền tảng</p>
+              <p class="text-xs text-slate-500 font-medium">Android, iOS & Windows</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual / Banner Product Image: anh_dau_trang.png -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-600 to-indigo-600 rounded-3xl blur-xl opacity-20 animate-pulse"></div>
+            <img src="assets/product-images/chu_tich_fnb.png" alt="Nhân viên thao tác bán hàng trên hệ thống F&B SMART POS tại quầy" class="w-full h-auto rounded-3xl shadow-2xl border border-slate-100 object-cover relative z-10">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="py-20 bg-white border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Tải ứng dụng F&B SMART V5.1</h2>
+        <p class="text-slate-600 text-lg">Trải nghiệm hệ thống quản lý F&B tối ưu trên mọi thiết bị của bạn.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Android -->
+        <div class="feature-card bg-slate-50 p-8 rounded-3xl flex flex-col justify-between text-center">
+          <div>
+            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.5 1.5 0 01-2.11-2.122L9.56 12 1.5 3.936A1.5 1.5 0 013.61 1.814zm18.782 9.072l-4.593-2.65a1.5 1.5 0 00-1.5 2.6l3.093 1.785-3.093 1.785a1.5 1.5 0 001.5 2.6l4.593-2.65a1.5 1.5 0 000-2.6z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Android POS & Staff</h3>
+            <p class="text-slate-600 text-sm mb-6">Dành cho điện thoại và máy POS di động của nhân viên phục vụ, thu ngân (Package ID: com.tuan.fnbsmart).</p>
+          </div>
+          <div class="space-y-4">
+            <div class="p-3 bg-white rounded-xl border border-slate-200 inline-block">
+              <!-- Static local QR Code file: website/assets/google-play-qr.png -->
+              <img src="assets/google-play-qr.png" alt="Google Play QR Code" class="w-28 h-28 mx-auto rounded object-contain">
+            </div>
+            <div>
+              <a href="https://play.google.com/store/apps/details?id=com.tuan.fnbsmart" target="_blank" class="block w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-4 rounded-xl transition shadow-lg shadow-sky-600/20">
+                Cài đặt trên Google Play
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- iOS -->
+        <div class="feature-card bg-slate-50 p-8 rounded-3xl flex flex-col justify-between text-center">
+          <div>
+            <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.31c.57-.69.96-1.65.85-2.61-.84.03-1.85.57-2.43 1.25-.53.61-.99 1.59-.87 2.54 1.01.08 1.88-.47 2.45-1.18z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">iOS / iPhone</h3>
+            <p class="text-slate-600 text-sm mb-6">Dành cho chủ quán và quản lý theo dõi báo cáo, điều hành từ xa trên iPhone.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="p-3 bg-white rounded-xl border border-slate-200 inline-block">
+              <div class="w-28 h-28 bg-slate-100 rounded flex items-center justify-center text-xs text-slate-400 font-medium">Chờ link App Store</div>
+            </div>
+            <div>
+              <span class="inline-block bg-amber-50 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Đang cập nhật URL chính thức</span>
+              <a href="#" class="block w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl transition opacity-75 cursor-not-allowed">
+                Tải trên App Store
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Windows -->
+        <div class="feature-card bg-slate-50 p-8 rounded-3xl flex flex-col justify-between text-center">
+          <div>
+            <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-inner">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Windows POS & KDS</h3>
+            <p class="text-slate-600 text-sm mb-6">Phần mềm thu ngân chuyên dụng cho máy tính để bàn, laptop tại quầy bar/thu ngân.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-xs text-slate-500 bg-white p-3 rounded-xl border border-slate-200">
+              Phiên bản: <span class="font-bold text-slate-800">V5.1.2 Enterprise</span><br>
+              Trạng thái: Đang phát triển / Chưa có bản tải chính thức
+            </div>
+            <div>
+              <span class="inline-block bg-amber-50 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full mb-3">Chờ phát hành bộ cài chính thức</span>
+              <a href="#" class="block w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-4 rounded-xl transition shadow-lg shadow-sky-600/20 opacity-75 cursor-not-allowed">
+                Tải phần mềm Windows
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Hệ sinh thái tính năng toàn diện</h2>
+        <p class="text-slate-600 text-lg">Được thiết kế chuyên biệt để giải quyết mọi bài toán vận hành của quán F&B tại Việt Nam.</p>
+      </div>
+
+      <div class="space-y-16">
+        <!-- Feature 1: POS with chu_tich_fnb.png -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <span class="bg-sky-100 text-sky-700 font-semibold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">Phân hệ bán hàng</span>
+            <h3 class="text-3xl font-bold text-slate-900">Màn hình POS Bán hàng trực quan & Tốc độ</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Tạo đơn hàng nhanh chóng chỉ với vài cú chạm. Quản lý sản phẩm, danh mục, topping và tùy chọn món linh hoạt. Hỗ trợ quản lý đơn mang đi, tại bàn và theo dõi trạng thái thanh toán minh bạch.
+            </p>
+            <ul class="space-y-3 text-slate-700 font-medium">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Giao diện tối ưu thao tác cho nhân viên phục vụ và thu ngân
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Quản lý sơ đồ bàn (Trống, Đang phục vụ, Đặt trước, Gộp/Chuyển bàn)
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Đa hình thức thanh toán: Tiền mặt, Chuyển khoản, Thẻ
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="relative mx-auto">
+              <img src="assets/product-images/anh_dau_trang.png" alt="F&B SMART POS - Giao diện và hệ thống quản lý bán hàng thông minh" class="w-full h-auto rounded-3xl shadow-xl border border-slate-200/80 object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Windows POS & KDS -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center lg:flex-row-reverse">
+          <div class="lg:col-span-6 lg:order-2 space-y-6">
+            <span class="bg-indigo-100 text-indigo-700 font-semibold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">Màn hình bếp điện tử (KDS)</span>
+            <h3 class="text-3xl font-bold text-slate-900">Loại bỏ nhầm lẫn với KDS thời gian thực</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Đơn hàng từ POS tự động chuyển thẳng xuống bộ phận pha chế và nhà bếp trên màn hình KDS chuyên dụng. Giúp bộ phận bếp nắm bắt chính xác món cần làm, theo dõi thời gian chế biến và giảm thiểu tối đa tình trạng nhầm món, sót món.
+            </p>
+            <ul class="space-y-3 text-slate-700 font-medium">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Hiển thị trực quan theo trạng thái: Mới, Đang nấu, Hoàn thành
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Âm thanh cảnh báo đơn mới và cảnh báo thời gian chờ
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Đồng bộ hóa giữa quầy thu ngân và khu vực bếp
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-6 lg:order-1">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-200/80">
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-amber-50 border border-amber-200 p-4 rounded-2xl space-y-3">
+                  <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-amber-800 bg-amber-200 px-2 py-0.5 rounded">Bàn 02</span>
+                    <span class="text-xs text-amber-700 font-medium">03 phút trước</span>
+                  </div>
+                  <div class="font-bold text-slate-900 text-sm">
+                    • Cà phê đen x2<br>• Sinh tố bơ x1
+                  </div>
+                  <div class="bg-amber-600 text-white text-center text-xs py-1.5 rounded-lg font-semibold">
+                    Đang chế biến
+                  </div>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-2xl space-y-3">
+                  <div class="flex justify-between items-center">
+                    <span class="text-xs font-bold text-emerald-800 bg-emerald-200 px-2 py-0.5 rounded">Mang đi</span>
+                    <span class="text-xs text-emerald-700 font-medium">Hoàn thành</span>
+                  </div>
+                  <div class="font-bold text-slate-900 text-sm">
+                    • Trà sữa truyền thống x2
+                  </div>
+                  <div class="bg-emerald-600 text-white text-center text-xs py-1.5 rounded-lg font-semibold">
+                    Sẵn sàng phục vụ
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Staff & Finance -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <span class="bg-purple-100 text-purple-700 font-semibold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">Quản trị & Báo cáo</span>
+            <h3 class="text-3xl font-bold text-slate-900">Quản lý nhân sự và Kiểm soát tài chính chặt chẽ</h3>
+            <p class="text-slate-600 leading-relaxed">
+              Trao quyền vận hành linh hoạt cho nhân viên thông qua mã kết nối cửa hàng và hệ thống phân quyền chi tiết (LEGO permissions). Theo dõi doanh thu, báo cáo ca làm việc và kiểm soát thu chi minh bạch thời gian thực.
+            </p>
+            <ul class="space-y-3 text-slate-700 font-medium">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Nhân viên tham gia cửa hàng bằng mã quán bảo mật, chủ quán phê duyệt
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Quản lý mở ca, chốt ca, kiểm kê tiền mặt đầu/cuối ca chính xác
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Báo cáo doanh thu, mặt hàng bán chạy và lợi nhuận trực quan
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-200/80 space-y-4">
+              <div class="flex justify-between items-center pb-3 border-b border-slate-100">
+                <span class="font-bold text-slate-900">Báo cáo tài chính hôm nay</span>
+                <span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2.5 py-1 rounded-full">Trực tuyến</span>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-50 p-4 rounded-2xl">
+                  <p class="text-xs text-slate-500 mb-1">Tổng doanh thu</p>
+                  <p class="text-xl font-bold text-slate-900">4.820.000 đ</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-2xl">
+                  <p class="text-xs text-slate-500 mb-1">Tổng đơn hàng</p>
+                  <p class="text-xl font-bold text-slate-900">76 đơn</p>
+                </div>
+              </div>
+              <div class="bg-sky-50 p-4 rounded-2xl flex items-center justify-between">
+                <div>
+                  <p class="text-xs text-sky-800 font-medium">Ca làm việc hiện tại</p>
+                  <p class="text-sm font-bold text-sky-900">Đã chốt 3.400.000 đ tiền mặt</p>
+                </div>
+                <span class="text-xs font-bold text-sky-700 bg-sky-200 px-2.5 py-1 rounded-lg">An toàn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Feature Articles Grid Section: KHÁM PHÁ TÍNH NĂNG F&B SMART -->
+  <section id="feature-articles" class="py-24 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="bg-sky-100 text-sky-700 font-semibold text-xs px-3.5 py-1 rounded-full uppercase tracking-wider">Hệ thống bài viết chi tiết</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">Khám phá tính năng F&B SMART</h2>
+        <p class="text-slate-600 text-lg">Tìm hiểu sâu về 10 phân hệ nghiệp vụ cốt lõi hỗ trợ tối ưu hóa vận hành quán của bạn.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">01</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Bán hàng nhanh chóng, tùy chỉnh món</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Tạo đơn nhanh, tùy chỉnh size, topping, ghi chú riêng cho từng món và phục vụ khách chuyên nghiệp.</p>
+          </div>
+          <a href="tinh-nang/ban-hang-va-tuy-chinh-mon.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">02</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Quản lý Size, Topping và giá bán</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Thiết lập cấu hình nhiều size, nhiều loại topping kèm theo định giá linh hoạt cho từng sản phẩm.</p>
+          </div>
+          <a href="tinh-nang/size-va-topping.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">03</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Thanh toán QR PayOS</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Kết nối tài khoản PayOS riêng của cửa hàng, quét mã QR thanh toán và đối soát giao dịch tự động.</p>
+          </div>
+          <a href="tinh-nang/thanh-toan-qr-payos.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">04</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Thanh toán đa phương thức</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Hỗ trợ tiền mặt, QR PayOS, ghi nợ và kết hợp nhiều phương thức thanh toán trên cùng một đơn hàng.</p>
+          </div>
+          <a href="tinh-nang/thanh-toan-da-phuong-thuc.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">05</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Ghi nợ khách hàng</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Ghi nhận khoản tiền khách chưa thanh toán ngay trong hóa đơn, quản lý công nợ minh bạch.</p>
+          </div>
+          <a href="tinh-nang/ghi-no-khach-hang.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">06</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Chăm sóc khách hàng Loyalty</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Quản lý thông tin khách, lịch sử mua hàng, phân hạng thành viên và tích điểm đổi quà.</p>
+          </div>
+          <a href="tinh-nang/khach-hang-than-thiet-loyalty.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">07</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Voucher và giảm giá</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Áp dụng voucher và chương trình giảm giá trực tiếp vào đơn hàng, tránh giảm giá thủ công.</p>
+          </div>
+          <a href="tinh-nang/voucher-va-giam-gia.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">08</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Quản lý bàn và phục vụ</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Quản lý sơ đồ bàn trực quan, mở bàn, thêm món và phục vụ khách ăn tại chỗ chuyên nghiệp.</p>
+          </div>
+          <a href="tinh-nang/quan-ly-ban-va-phuc-vu.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">09</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Màn hình bếp KDS</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Hiển thị đơn hàng thời gian thực cho nhà bếp, theo dõi trạng thái chế biến chống nhầm sót món.</p>
+          </div>
+          <a href="tinh-nang/man-hinh-bep-kds.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="feature-card bg-slate-50 p-6 rounded-3xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center font-bold text-lg mb-4">10</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">Quản lý nhân viên & Quyền POS</h3>
+            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Phân quyền LEGO tách biệt thành viên cửa hàng và quyền thao tác bán hàng trên máy POS.</p>
+          </div>
+          <a href="tinh-nang/quan-ly-nhan-vien-va-quyen-pos.html" class="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition text-sm">
+            Tìm hiểu thêm <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- ROI Calculator Section -->
+  <section id="roi" class="py-20 bg-white border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Công cụ tính toán hiệu quả vận hành (ROI)</h2>
+        <p class="text-slate-600 text-lg">Khám phá mức độ tối ưu thời gian và chi phí khi ứng dụng F&B SMART vào cửa hàng của bạn.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-slate-50 p-8 sm:p-12 rounded-3xl border border-slate-200/80 shadow-xl items-center">
+        <!-- Sliders Input -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm font-semibold text-slate-700">
+              <span>Số lượng nhân viên cửa hàng (hệ số quy mô nhân sự)</span>
+              <span id="val-staff" class="text-sky-600 font-bold">5</span>
+            </div>
+            <input type="range" id="roi-staff" min="1" max="30" value="5" class="w-full h-2 bg-slate-200 rounded-lg cursor-pointer">
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm font-semibold text-slate-700">
+              <span>Số đơn hàng trung bình mỗi ngày</span>
+              <span id="val-orders" class="text-sky-600 font-bold">80</span>
+            </div>
+            <input type="range" id="roi-orders" min="10" max="500" step="10" value="80" class="w-full h-2 bg-slate-200 rounded-lg cursor-pointer">
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm font-semibold text-slate-700">
+              <span>Số ngày kinh doanh mỗi tháng</span>
+              <span id="val-days" class="text-sky-600 font-bold">30</span>
+            </div>
+            <input type="range" id="roi-days" min="1" max="31" value="30" class="w-full h-2 bg-slate-200 rounded-lg cursor-pointer">
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm font-semibold text-slate-700">
+              <span>Giá trị thất thoát / sai sót ước tính mỗi ngày</span>
+              <span id="val-loss" class="text-sky-600 font-bold">150.000 đ</span>
+            </div>
+            <input type="range" id="roi-loss" min="0" max="1000000" step="50000" value="150000" class="w-full h-2 bg-slate-200 rounded-lg cursor-pointer">
+          </div>
+
+          <div class="space-y-2">
+            <div class="flex justify-between text-sm font-semibold text-slate-700">
+              <span>Thời gian chủ quán quản lý thủ công mỗi ngày (giờ)</span>
+              <span id="val-hours" class="text-sky-600 font-bold">3</span>
+            </div>
+            <input type="range" id="roi-hours" min="1" max="12" value="3" class="w-full h-2 bg-slate-200 rounded-lg cursor-pointer">
+          </div>
+        </div>
+
+        <!-- Output Results (Strictly user-entered metrics and staff scale factor, no guaranteed savings claims) -->
+        <div class="lg:col-span-5 bg-slate-900 text-white p-8 rounded-2xl space-y-6 shadow-2xl">
+          <h3 class="text-xl font-bold border-b border-slate-800 pb-4">Tổng hợp chỉ số vận hành hàng tháng</h3>
+
+          <div class="space-y-4">
+            <div>
+              <p class="text-xs text-slate-400">Tổng thời gian quản lý thủ công (Có tính hệ số quy mô nhân sự)</p>
+              <p id="out-manual-hours" class="text-2xl font-bold text-white">90 giờ/tháng</p>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400">Tổng sản lượng đơn hàng (Hàng tháng)</p>
+              <p id="out-total-orders" class="text-2xl font-bold text-sky-400">2.400 đơn/tháng</p>
+            </div>
+            <div class="pt-4 border-t border-slate-800">
+              <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Tổng giá trị thất thoát thủ công (Hàng tháng)</p>
+              <p id="out-total-loss" class="text-3xl font-extrabold text-amber-400">4.500.000 đ/tháng</p>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-slate-400 leading-relaxed italic">
+            * Lưu ý: Các con số trên dựa trên thông số do chủ quán tự nhập (trong đó biến số nhân viên được dùng để tính hệ số quy mô phối hợp). Đây là dữ liệu tự đánh giá, không phải khoản tiết kiệm cam kết chắc chắn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section id="comparison" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">So sánh vận hành truyền thống và F&B SMART</h2>
+        <p class="text-slate-600 text-lg">Sự khác biệt vượt trội khi đưa công nghệ vào quản lý cửa hàng F&B.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 bg-slate-900 text-white font-bold p-5 text-center text-sm sm:text-base">
+          <div>Vận hành thủ công</div>
+          <div class="text-sky-400">Sử dụng F&B SMART V5.1</div>
+        </div>
+        <div class="divide-y divide-slate-100 text-sm sm:text-base">
+          <div class="grid grid-cols-2 p-5 items-center bg-slate-50/50">
+            <div class="text-slate-600 pr-4">Ghi chép đơn hàng bằng giấy / sổ tay</div>
+            <div class="text-slate-900 font-semibold pl-4 border-l border-slate-200">Quản lý đơn hàng điện tử trên POS thời gian thực</div>
+          </div>
+          <div class="grid grid-cols-2 p-5 items-center">
+            <div class="text-slate-600 pr-4">Tổng hợp doanh thu thủ công cuối ngày, dễ sai sót</div>
+            <div class="text-slate-900 font-semibold pl-4 border-l border-slate-200">Báo cáo doanh thu tự động, minh bạch theo thời gian thực</div>
+          </div>
+          <div class="grid grid-cols-2 p-5 items-center bg-slate-50/50">
+            <div class="text-slate-600 pr-4">Trao đổi đơn bếp thủ công, dễ nhầm món và sót món</div>
+            <div class="text-slate-900 font-semibold pl-4 border-l border-slate-200">Kết nối quy trình POS và KDS tự động</div>
+          </div>
+          <div class="grid grid-cols-2 p-5 items-center">
+            <div class="text-slate-600 pr-4">Khó kiểm soát nhân viên, gian lận hoặc nhầm lẫn tiền bạc</div>
+            <div class="text-slate-900 font-semibold pl-4 border-l border-slate-200">Quản lý nhân sự, phân quyền LEGO và chốt ca minh bạch</div>
+          </div>
+          <div class="grid grid-cols-2 p-5 items-center bg-slate-50/50">
+            <div class="text-slate-600 pr-4">Chủ quán phải túc trực tại cửa hàng liên tục</div>
+            <div class="text-slate-900 font-semibold pl-4 border-l border-slate-200">Theo dõi hoạt động cửa hàng từ xa trên điện thoại</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-24 bg-white border-y border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Gói giải pháp & Báo giá</h2>
+        <p class="text-slate-600 text-lg">Liên hệ để nhận tư vấn và báo giá chi tiết phù hợp với quy mô vận hành thực tế của quán.</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-8 sm:p-12 shadow-2xl max-w-4xl mx-auto text-center space-y-6">
+        <span class="inline-block bg-sky-500/20 text-sky-400 font-semibold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider">Giải pháp linh hoạt theo quy mô</span>
+        <h3 class="text-2xl sm:text-3xl font-bold">Nhận tư vấn & Báo giá chi tiết</h3>
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+          F&B SMART V5.1 cung cấp giải pháp trọn gói bao gồm phân hệ POS, KDS, quản lý nhân sự và tài chính. Chi phí sẽ được tư vấn chi tiết dựa trên quy mô thực tế của cửa hàng.
+        </p>
+        <div class="pt-4">
+          <a href="#demo" class="inline-block bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-sky-500/30 text-base">
+            LIÊN HỆ NHẬN TƯ VẤN & BÁO GIÁ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide Center & FAQ -->
+  <section id="guides" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Trung tâm hướng dẫn & Câu hỏi thường gặp</h2>
+        <p class="text-slate-600 text-lg">Mọi thông tin hướng dẫn sử dụng và giải đáp thắc mắc dành cho chủ quán.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <!-- Guides List -->
+        <div class="space-y-6">
+          <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            Tài liệu hướng dẫn nhanh
+          </h3>
+          <div class="space-y-4">
+            <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex justify-between items-center">
+              <div>
+                <h4 class="font-bold text-slate-900">Hướng dẫn đăng ký tài khoản & tạo cửa hàng</h4>
+                <p class="text-xs text-slate-500 mt-1">Thiết lập thông tin cơ bản và chọn mô hình kinh doanh.</p>
+              </div>
+              <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-lg">Đang cập nhật</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex justify-between items-center">
+              <div>
+                <h4 class="font-bold text-slate-900">Hướng dẫn kết nối nhân viên bằng mã quán</h4>
+                <p class="text-xs text-slate-500 mt-1">Quy trình tham gia và phân quyền LEGO cho nhân viên.</p>
+              </div>
+              <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-lg">Đang cập nhật</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex justify-between items-center">
+              <div>
+                <h4 class="font-bold text-slate-900">Hướng dẫn sử dụng màn hình POS & KDS Bếp</h4>
+                <p class="text-xs text-slate-500 mt-1">Quy trình từ nhận đơn, chuyển bếp đến thanh toán.</p>
+              </div>
+              <span class="text-xs bg-slate-100 text-slate-700 font-semibold px-3 py-1 rounded-lg">Đang cập nhật</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="space-y-6">
+          <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+            <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Câu hỏi thường gặp
+          </h3>
+          <div class="space-y-4">
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+              <button onclick="toggleFAQ(this)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
+                <span>F&B SMART có yêu cầu kết nối Internet liên tục không?</span>
+                <svg class="w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+              <div class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                F&B SMART hoạt động tốt nhất khi có kết nối Internet để đồng bộ dữ liệu giữa POS, KDS và báo cáo của chủ quán theo thời gian thực.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+              <button onclick="toggleFAQ(this)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
+                <span>Làm thế nào để thêm nhân viên vào cửa hàng?</span>
+                <svg class="w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+              <div class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                Chủ quán cung cấp mã quán cho nhân viên. Nhân viên đăng ký ứng dụng, nhập mã quán để gửi yêu cầu tham gia và chủ quán sẽ thực hiện phê duyệt trên hệ thống quản lý.
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+              <button onclick="toggleFAQ(this)" class="w-full p-5 text-left font-bold text-slate-900 flex justify-between items-center focus:outline-none">
+                <span>Hệ thống hỗ trợ những thiết bị nào?</span>
+                <svg class="w-5 h-5 text-slate-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </button>
+              <div class="hidden p-5 pt-0 text-slate-600 text-sm leading-relaxed border-t border-slate-100">
+                F&B SMART hỗ trợ đa nền tảng bao gồm điện thoại Android, iOS (iPhone), máy tính bảng và phần mềm thu ngân trên máy tính.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Registration Form Section -->
+  <section id="demo" class="py-24 bg-white border-y border-slate-200/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-sky-900 to-indigo-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10 text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-3xl font-extrabold mb-3">Đăng ký trải nghiệm Demo ngay hôm nay</h2>
+          <p class="text-sky-200 text-sm sm:text-base">Để lại thông tin để chuyên gia của chúng tôi hỗ trợ tư vấn và thiết lập giải pháp tối ưu cho quán của bạn.</p>
+        </div>
+
+        <form id="demo-form" class="relative z-10 space-y-4 max-w-xl mx-auto">
+          <div id="form-status" class="hidden"></div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-sky-200 mb-1">Họ và tên chủ quán *</label>
+            <input type="text" id="demo-name" required placeholder="Ví dụ: Nguyễn Văn A" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-sky-200 mb-1">Tên quán / Doanh nghiệp *</label>
+            <input type="text" id="demo-store" required placeholder="Ví dụ: Cafe Sữa Đá Sài Gòn" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold uppercase tracking-wider text-sky-200 mb-1">Số điện thoại liên hệ *</label>
+            <input type="tel" id="demo-phone" required placeholder="Ví dụ: 0912345678" class="w-full bg-slate-800/80 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 transition">
+          </div>
+
+          <div class="flex items-start gap-3 pt-2">
+            <input type="checkbox" id="demo-terms" required class="mt-1 rounded bg-slate-800 border-slate-700 text-sky-600 focus:ring-sky-500">
+            <label for="demo-terms" class="text-xs text-slate-300">
+              Tôi đồng ý cho phép F&B SMART xử lý dữ liệu nhằm mục đích tư vấn sản phẩm. (Chính sách bảo mật dữ liệu đang chờ PO phê duyệt).
+            </label>
+          </div>
+
+          <button type="submit" class="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-4 rounded-xl transition shadow-lg shadow-sky-500/30 text-base mt-4">
+            ĐĂNG KÝ NHẬN TƯ VẤN
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Download Bar -->
+  <div id="sticky-download-bar" class="sticky-download-bar fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 py-3.5 px-4 sm:px-8 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="Logo" class="w-8 h-8 rounded-lg object-cover">
+        <div>
+          <span class="text-white font-bold text-sm block">F&B SMART V5.1</span>
+          <span class="text-xs text-slate-400 hidden sm:inline">Giải pháp quản lý kinh doanh F&B thông minh</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://play.google.com/store/apps/details?id=com.tuan.fnbsmart" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition shadow-md shadow-sky-600/30">
+          Tải Android (Google Play)
+        </a>
+        <a href="#demo" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition border border-slate-700">
+          Đăng ký Demo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="Logo" class="w-8 h-8 rounded-lg object-cover">
+            <span class="text-white font-bold text-lg">F&B SMART</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Hệ thống quản lý và vận hành thông minh dành cho các hộ kinh doanh và doanh nghiệp ngành F&B tại Việt Nam.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Phân hệ sản phẩm</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#features" class="hover:text-white transition">POS Bán hàng</a></li>
+            <li><a href="#features" class="hover:text-white transition">POS Windows</a></li>
+            <li><a href="#features" class="hover:text-white transition">Màn hình bếp KDS</a></li>
+            <li><a href="#features" class="hover:text-white transition">Quản lý nhân sự & Phân quyền</a></li>
+            <li><a href="#features" class="hover:text-white transition">Financial & Báo cáo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Hỗ trợ & Hướng dẫn</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="#guides" class="hover:text-white transition">Hướng dẫn cài đặt Android</a></li>
+            <li><a href="#guides" class="hover:text-white transition">Hướng dẫn cài đặt iOS</a></li>
+            <li><a href="#guides" class="hover:text-white transition">Hướng dẫn cài đặt Windows</a></li>
+            <li><a href="#guides" class="hover:text-white transition">Câu hỏi thường gặp (FAQ)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4">Chính sách & Pháp lý</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><span class="text-slate-500">Chính sách bảo mật (Chờ PO phê duyệt)</span></li>
+            <li><span class="text-slate-500">Điều khoản sử dụng (Chờ PO phê duyệt)</span></li>
+            <li><a href="#demo" class="hover:text-white transition">Liên hệ hỗ trợ tư vấn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; 2025 F&B SMART V5.1 Enterprise. All rights reserved.</p>
+        <p>Phát triển bởi đội ngũ kỹ thuật F&B SMART.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
